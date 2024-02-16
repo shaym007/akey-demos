@@ -1,0 +1,74 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      meta.helm.sh/release-name: gw
+      meta.helm.sh/release-namespace: aws-ec2-akeyless-namespace
+    creationTimestamp: "2024-02-11T13:52:46Z"
+    finalizers:
+    - service.kubernetes.io/load-balancer-cleanup
+    labels:
+      app.kubernetes.io/instance: gw
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: akeyless-api-gateway
+      app.kubernetes.io/version: 3.61.0
+      helm.sh/chart: akeyless-api-gateway-1.38.0
+    name: gw-akeyless-api-gateway
+    namespace: aws-ec2-akeyless-namespace
+    resourceVersion: "58807"
+    uid: eb5888c5-9bf4-4261-b38b-54b304460ba1
+  spec:
+    allocateLoadBalancerNodePorts: true
+    clusterIP: 10.43.1.65
+    clusterIPs:
+    - 10.43.1.65
+    externalTrafficPolicy: Cluster
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: web
+      nodePort: 31343
+      port: 18888
+      protocol: TCP
+      targetPort: web
+    - name: configure-app
+      nodePort: 32066
+      port: 8000
+      protocol: TCP
+      targetPort: configure-app
+    - name: legacy-api
+      nodePort: 32294
+      port: 8080
+      protocol: TCP
+      targetPort: legacy-api
+    - name: api
+      nodePort: 30644
+      port: 8081
+      protocol: TCP
+      targetPort: api
+    - name: hvp
+      nodePort: 31519
+      port: 8200
+      protocol: TCP
+      targetPort: hvp
+    - name: kmip
+      nodePort: 31819
+      port: 5696
+      protocol: TCP
+      targetPort: kmip
+    selector:
+      app.kubernetes.io/instance: gw
+      app.kubernetes.io/name: akeyless-api-gateway
+    sessionAffinity: None
+    type: LoadBalancer
+  status:
+    loadBalancer:
+      ingress:
+      - ip: 172.31.46.54
+kind: List
+metadata:
+  resourceVersion: ""

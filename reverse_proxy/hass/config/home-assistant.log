@@ -1,0 +1,2 @@
+2024-02-15 13:24:00.127 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2024-02-15 13:24:06.359 WARNING (MainThread) [homeassistant.bootstrap] Support for the running Python version 3.11.6 is deprecated and will be removed in Home Assistant 2024.4; Please upgrade Python to 3.12

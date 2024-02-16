@@ -1,0 +1,143 @@
+[2024-02-15 13:23:41.582 +01:00] [INF] [1] Main: Jellyfin version: "10.8.13"
+[2024-02-15 13:23:41.661 +01:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2024-02-15 13:23:41.669 +01:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2024-02-15 13:23:41.673 +01:00] [INF] [1] Main: Operating system: "Linux"
+[2024-02-15 13:23:41.676 +01:00] [INF] [1] Main: Architecture: X64
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: 64-Bit Process: True
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: User Interactive: True
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: Processor count: 2
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: Program data path: "/config/data"
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2024-02-15 13:23:41.677 +01:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2024-02-15 13:23:42.010 +01:00] [INF] [1] Jellyfin.Server.Migrations.MigrationRunner: Applying migration '"CreateNetworkConfiguration"'
+[2024-02-15 13:23:42.087 +01:00] [INF] [1] Jellyfin.Server.Migrations.MigrationRunner: Migration '"CreateNetworkConfiguration"' applied successfully
+[2024-02-15 13:23:42.179 +01:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2024-02-15 13:23:42.239 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2024-02-15 13:23:42.466 +01:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2024-02-15 13:23:42.466 +01:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2024-02-15 13:23:42.467 +01:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2024-02-15 13:23:42.478 +01:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2024-02-15 13:23:42.478 +01:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2024-02-15 13:23:45.676 +01:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.13.0"
+[2024-02-15 13:23:45.678 +01:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.13.0"
+[2024-02-15 13:23:45.680 +01:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.13.0"
+[2024-02-15 13:23:45.680 +01:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.13.0"
+[2024-02-15 13:23:45.681 +01:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.13.0"
+[2024-02-15 13:23:45.794 +01:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2024-02-15 13:23:45.939 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2024-02-15 13:23:45.940 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2024-02-15 13:23:46.369 +01:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {5f4d2c9a-ed73-4a2f-ac10-372d059e63ec} may be persisted to storage in unencrypted form.
+[2024-02-15 13:23:46.412 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2024-02-15 13:23:46.498 +01:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2024-02-16 02:00:00.000 +01:00, which is 12:36:13.5013288 from now.
+[2024-02-15 13:23:46.827 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.4"
+[2024-02-15 13:23:46.919 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2024-02-15 13:23:46.953 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2024-02-15 13:23:46.986 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2024-02-15 13:23:47.237 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2024-02-15 13:23:47.597 +01:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2024-02-15 13:23:47.599 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "62f08ef46e7849668187ca373f8bff23"
+[2024-02-15 13:23:47.858 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.241055
+[2024-02-15 13:23:47.858 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2024-02-15 13:23:47.869 +01:00] [WRN] [9] Jellyfin.Server.Middleware.ResponseTimeMiddleware: Slow HTTP Response from "http://localhost:8096/health" to "127.0.0.1" in 0:00:00.6584573 with Status Code 503
+[2024-02-15 13:23:48.046 +01:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1870825
+[2024-02-15 13:23:48.046 +01:00] [INF] [1] Main: Startup complete 0:00:06.8114862
+[2024-02-15 13:23:49.148 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.149 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.149 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.150 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.150 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.151 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.151 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.152 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.152 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.152 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.152 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.152 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.153 +01:00] [WRN] [9] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2024-02-15 13:23:49.506 +01:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2024-02-15 13:23:49.508 +01:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2024-02-15 13:23:49.512 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2024-02-15 13:23:50.813 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2024-02-15 13:23:50.834 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.500 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2024-02-15 13:24:46.500 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "SubtitleScheduledTask"
+[2024-02-15 13:24:46.501 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2024-02-15 13:24:46.501 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2024-02-15 13:24:46.501 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteCacheFileTask"
+[2024-02-15 13:24:46.501 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2024-02-15 13:24:46.501 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2024-02-15 13:24:46.501 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteLogFileTask"
+[2024-02-15 13:24:46.501 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2024-02-15 13:24:46.506 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.507 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.522 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Transcode Directory"
+[2024-02-15 13:24:46.522 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteTranscodeFileTask"
+[2024-02-15 13:24:46.522 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Transcode Directory"
+[2024-02-15 13:24:46.524 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.525 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.546 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.547 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.547 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Update Plugins"
+[2024-02-15 13:24:46.547 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2024-02-15 13:24:46.548 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2024-02-15 13:24:46.550 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Optimize database"
+[2024-02-15 13:24:46.550 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "OptimizeDatabaseTask"
+[2024-02-15 13:24:46.551 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Optimize database"
+[2024-02-15 13:24:46.552 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Optimizing and vacuuming jellyfin.db...
+[2024-02-15 13:24:46.568 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.569 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.582 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2024-02-15 13:24:46.582 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2024-02-15 13:24:46.582 +01:00] [INF] [17] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2024-02-15 13:24:46.587 +01:00] [INF] [17] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2024-02-15 13:24:46.681 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: jellyfin.db optimized successfully!
+[2024-02-15 13:24:46.681 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.683 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.698 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh Guide"
+[2024-02-15 13:24:46.698 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshGuideScheduledTask"
+[2024-02-15 13:24:46.699 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh Guide"
+[2024-02-15 13:24:46.724 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2024-02-15 13:24:46.724 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshChannelsScheduledTask"
+[2024-02-15 13:24:46.724 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2024-02-15 13:24:46.735 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.736 +01:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:46.983 +01:00] [ERR] [9] Emby.Server.Implementations.Library.LibraryManager: Error running post-scan task
+System.ArgumentException: Not enough valid pictures provided to create a splashscreen!
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateCollage(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Jellyfin.Drawing.Skia.SplashscreenBuilder.GenerateSplash(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops, String outputPath)
+   at Jellyfin.Drawing.Skia.SkiaEncoder.CreateSplashscreen(IReadOnlyList`1 posters, IReadOnlyList`1 backdrops)
+   at Emby.Server.Implementations.Library.SplashscreenPostScanTask.Run(IProgress`1 progress, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Library.LibraryManager.RunPostScanTasks(IProgress`1 progress, CancellationToken cancellationToken)
+[2024-02-15 13:24:46.995 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:46.995 +01:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:47.043 +01:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2024-02-15 13:24:47.044 +01:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 13:24:49.755 +01:00] [INF] [12] Emby.Server.Implementations.LiveTv.LiveTvManager: Refreshing guide with 7 days of guide data
+[2024-02-15 13:24:49.766 +01:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2024-02-15 13:24:49.767 +01:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2024-02-15 14:01:42.992 +01:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2024-02-15 14:01:42.995 +01:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2024-02-15 14:01:43.014 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2024-02-15 14:01:43.015 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2024-02-15 14:01:43.017 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2024-02-15 14:01:43.018 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2024-02-15 14:01:43.019 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2024-02-15 14:01:43.019 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2024-02-15 14:01:43.020 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2024-02-15 14:01:43.022 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2024-02-15 14:01:43.022 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2024-02-15 14:01:43.023 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2024-02-15 14:01:43.024 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2024-02-15 14:01:43.025 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2024-02-15 14:01:43.027 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2024-02-15 14:01:43.027 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2024-02-15 14:01:43.030 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2024-02-15 14:01:43.031 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2024-02-15 14:01:43.031 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.25.0.2"
+[2024-02-15 14:01:43.032 +01:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"
+[2024-02-15 14:01:43.033 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2024-02-15 14:01:43.034 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2024-02-15 14:01:43.037 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2024-02-15 14:01:43.038 +01:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2024-02-15 14:01:43.045 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2024-02-15 14:01:43.045 +01:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"

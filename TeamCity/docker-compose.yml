@@ -1,0 +1,28 @@
+version: '2.2' 
+services:
+  team-server:
+    image: 'jetbrains/teamcity-server:latest' 
+    container_name: teamcity-server
+    restart: unless-stopped 
+    ports:
+      - '8111:8111'
+    volumes:
+      - ./data:/data/teamcity_server/datadir
+      - ./logs:/opt/teamcity/logs
+    hostname: teamcity-server
+
+
+  team-agent:
+    image: 'jetbrains/teamcity-agent:latest' 
+    container_name: teamcity-agent
+    restart: unless-stopped 
+    #ports:
+    #  - '8111:8111'
+    volumes:
+      - ./agent:/data/teamcity_agent/conf
+    hostname: teamcity-agent
+    environment:
+      SERVER_URL: "http://teamcity-server:8111"
+
+
+

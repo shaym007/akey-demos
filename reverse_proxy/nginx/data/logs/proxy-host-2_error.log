@@ -1,0 +1,1 @@
+2024/02/11 22:21:04 [warn] 811#811: *6250 using uninitialized "server" variable while logging request, client: 199.45.154.48, server: shay-dev.duckdns.org, request: "GET / HTTP/1.1", host: "shay-dev.duckdns.org:443"
